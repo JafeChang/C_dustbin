@@ -8,8 +8,11 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+#include "myMath.h"
+
+int main(int argc, const char *argv[]) {
+	for (int i = 0; i <= 25; i++) {
+		printf("%d\t%lld\n", i, factorial(i));
+	}
+	return 0;
 }
