@@ -11,8 +11,9 @@
 #include "myMath.h"
 
 int main(int argc, const char *argv[]) {
-	for (int i = 0; i <= 25; i++) {
-		printf("%d\t%lld\n", i, factorial(i));
-	}
+    double d[]={1.0,2.0,3};
+    int b=sizeof(d);
+    printf("%f\n",++*d);
+    sumDouble(d);
 	return 0;
 }

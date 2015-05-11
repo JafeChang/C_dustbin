@@ -7,7 +7,27 @@
 //
 
 # include <stdio.h>
+int64_t getMinInt(int64_t n1,int64_t n2){
+    int64_t minInt=n1<n2?n1:n2;
+    return minInt;
+}
+double getMinDouble(double n1,double n2){
+    double minInt=n1<n2?n1:n2;
+    return minInt;
 
+}
+int64_t getMaxInt(int64_t n1,int64_t n2){
+    int64_t maxInt=n1>n2?n1:n2;
+    return maxInt;
+}
+
+double getMaxDouble(double n1,double n2){
+    double maxInt=n1>n2?n1:n2;
+    return maxInt;
+}
+double sortDouble(double doubles[],int len){
+    
+}
 /*************************************************
    Function:  sumInt64
    Description:
@@ -26,6 +46,24 @@ int64_t sumInt64(int64_t start, int64_t end, int64_t step) {
 		sum += i;
 	}
 	return sum;
+}
+
+double sumDouble(double doubles[],int len){
+    int naturalCount=0;
+    double sum=0;
+//    for(int i=0;i<len;i++){
+//        if(doubles[i]>=0){
+//            naturalCount++;
+//        }
+//    }
+//    double naturalNumbers[naturalCount];
+//    double negativeNumbers[len-naturalCount];
+//    int64_t minLen=getMinInt(naturalCount, negativeNumbers);
+//    for(int i=0;i<minLen;i++){
+//        sum+=
+//    }
+//   
+    return 0.0;
 }
 
 /*************************************************
@@ -55,3 +93,5 @@ int64_t factorial(int64_t number) {
 	}
 	return result;
 }
+
+
